@@ -24,7 +24,6 @@ class Welcome extends CI_Controller {
 		$res = $this->movie_model->get_last_ten_entries();
 		$data['rs'] = $res;
 		$this->load->view('index', $data);
-
 	}
 }
 	

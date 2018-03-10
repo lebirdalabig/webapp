@@ -9,20 +9,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="css/faqstyle.css" type="text/css" media="all" />
-<link href="css/medile.css" rel='stylesheet' type='text/css' />
-<link href="css/single.css" rel='stylesheet' type='text/css' />
-<link rel="stylesheet" href="css/contactstyle.css" type="text/css" media="all" />
+<link href="<?php echo base_url('resources/css/bootstrap.css');?>" rel="stylesheet" type="text/css" media="all" />
+<link href="<?php echo base_url('resources/css/style.css');?>" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="<?php echo base_url('resources/css/faqstyle.css');?>" type="text/css" media="all" />
+<link href="<?php echo base_url('resources/css/medile.css');?>" rel='stylesheet' type='text/css' />
+<link href="<?php echo base_url('resources/css/single.css');?>" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="<?php echo base_url('resources/css/contactstyle.css');?>" type="text/css" media="all" />
 <!-- news-css -->
-<link rel="stylesheet" href="news-css/news.css" type="text/css" media="all" />
+<link rel="stylesheet" href="news-css/news.css');?>" type="text/css" media="all" />
 <!-- //news-css -->
 <!-- list-css -->
-<link rel="stylesheet" href="list-css/list.css" type="text/css" media="all" />
+<link rel="stylesheet" href="list-css/list.css');?>" type="text/css" media="all" />
 <!-- //list-css -->
 <!-- font-awesome icons -->
-<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link rel="stylesheet" href="<?php echo base_url('resources/css/font-awesome.min.css');?>" />
 <!-- //font-awesome icons -->
 <!-- js -->
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>

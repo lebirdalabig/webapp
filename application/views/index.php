@@ -411,7 +411,7 @@
 						<a href="genres.php">Movies</a>
 					</li>
 					<li>
-						<a href="faq.php">FAQ</a>
+						<a href="<?php echo base_url('index.php/faq"');?>">FAQ</a>
 					</li>
 					<li>
 						<a href="horror.php">Action</a>
@@ -426,7 +426,7 @@
 						<a href="icons.php">Icons</a>
 					</li>
 					<li>
-						<a href="contact.php">Contact Us</a>
+						<a href="<?php echo base_url('index.php/contact"');?>">Contact Us</a>
 					</li>
 				</ul>
 			</div>
