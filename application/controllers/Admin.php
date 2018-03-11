@@ -15,10 +15,10 @@ class Admin extends CI_Controller {
         }
         public function adminms()
         {
-            $this->load->view('admin/adminms');
+            $this->load->view('adminms', $data);
         }
         public function adminut()
         {
-            $this->load->view('admin/adminut');
+            $this->load->view('adminut');
         }
 }

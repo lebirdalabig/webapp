@@ -55,9 +55,9 @@ body {
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Building/Cinema Settings</a>
-  <a href="#">Movie/Screening Settings</a>
-  <a href="#">Transaction Settings</a>
+  <a href="<?php echo base_url('admin/adminbc"');?>">Building/Cinema Settings</a>
+  <a href="<?php echo base_url('admin/adminms"');?>">Movie/Screening Settings</a>
+  <a href="<?php echo base_url('admin/adminut"');?>">Transaction Settings</a>
   <a href="#">User Settings</a>
 </div>
 
@@ -79,7 +79,7 @@ body {
           </tr>
         </thead>
         <tbody>
-          <?php
+        <!--   <?php
             $query = "SELECT * FROM movie;";
             
             $res = mysqli_query ($conn,$query);
@@ -96,7 +96,7 @@ body {
               echo "</tr>";
             }
           
-          ?>
+          ?> -->
         </tbody>
       </table>
     </div>

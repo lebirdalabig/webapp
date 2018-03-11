@@ -56,8 +56,8 @@ body {
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <a href="<?php echo base_url('admin/adminbc"');?>">Building/Cinema Management</a>
-  <a href="adminms.php">Movie/Screening Management</a>
-  <a href="adminut.php">User/Transaction Management</a>
+  <a href="<?php echo base_url('admin/adminms"');?>">Movie/Screening Management</a>
+  <a href="<?php echo base_url('admin/adminut"');?>">User/Transaction Management</a>
 </div>
 
 <div id="main">
