@@ -22,6 +22,9 @@ class Admin extends CI_Controller {
         }
         public function adminut()
         {
+			$this->load->model('userModel');
+        	$res = $this->userModel->get_user();
+        	$data['rs'] = $res;
             $this->load->view('adminut');
         }
 
