@@ -21,7 +21,7 @@
 <!-- //js -->
 <!-- banner-bottom-plugin -->
 <link href="<?php echo base_url('resources/css/owl.carousel.css');?>" rel="stylesheet" type="text/css" media="all">
-<script src="<?php echo base_url('resources/js/owl.carousel.js');?>""></script>
+<script src="<?php echo base_url('resources/js/owl.carousel.js');?>"></script>
 <script>
 	$(document).ready(function() { 
 		$("#owl-demo").owlCarousel({

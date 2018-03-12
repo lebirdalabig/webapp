@@ -60,8 +60,8 @@ body {
   <a href="<?php echo base_url('admin/adminut"');?>">User/Transaction Management</a>
 </div>
 
-<div id="main">
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; WELCOME LE BIRD ALA BIG!</span>
+<div id="main" style="background-color:orange;">
+  <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; WELCOME LE BIRD ALA BIG!</span>
 </div>
 
 <script>
