@@ -55,7 +55,7 @@
 	<div class="header">
 		<div class="container">
 			<div class="w3layouts_logo">
-				<image src="<?php echo base_url('resources/images/fcc.png');?>" style="width:70px;">
+				<image src="<?php echo base_url('resources/images/fcc.png');?>" style="width:70px; float:left;">
 			</div>
 			<div class="w3_search">
 				<form action="#" method="post">
