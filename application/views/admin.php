@@ -55,14 +55,16 @@ body {
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="<?php echo base_url('admin/adminbc"');?>">Building/Cinema Management</a>
-  <a href="<?php echo base_url('admin/adminms"');?>">Movie/Screening Management</a>
-  <a href="<?php echo base_url('admin/adminut"');?>">User/Transaction Management</a>
+  <a href="<?php echo base_url('admin/adminbc"');?>">Building Management</a>
+  <a href="<?php echo base_url('admin/adminci"');?>">Cinema Management</a>
+  <a href="<?php echo base_url('admin/adminms"');?>">Movie Management</a>
+  <a href="<?php echo base_url('admin/adminsc"');?>">Screening Management</a>
+  <a href="<?php echo base_url('admin/adminut"');?>">User Management</a>
+  <a href="<?php echo base_url('admin/admintr"');?>">Transaction Management</a>
 </div>
 
 <div id="main" style="background-color:orange;">
-  <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; Welcome, admin, <?php echo $_SESSION['username']?></span>
-  <a href="Logout" style="float:right;">Logout</a>
+  <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; WELCOME ADMIN!</span>
 </div>
 
 <script>

@@ -64,10 +64,12 @@ body {
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="admintest.php">Building/Cinema Settings</a>
-  <a href="admintest.php">Movie/Screening Settings</a>
-  <a href="admintest.php">Transaction Settings</a>
-  <a href="admintest.php">User Settings</a>
+  <a href="<?php echo base_url('admin/adminbc"');?>">Building Management</a>
+  <a href="<?php echo base_url('admin/adminci"');?>">Cinema Management</a>
+  <a href="<?php echo base_url('admin/adminms"');?>">Movie Management</a>
+  <a href="<?php echo base_url('admin/adminsc"');?>">Screening Management</a>
+  <a href="<?php echo base_url('admin/adminut"');?>">User Management</a>
+  <a href="<?php echo base_url('admin/admintr"');?>">Transaction Management</a>
 </div>
 
 <div id="main">

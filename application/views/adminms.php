@@ -64,10 +64,12 @@ body {
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="admintest.php">Building/Cinema Settings</a>
-  <a href="admintest.php">Movie/Screening Settings</a>
-  <a href="admintest.php">Transaction Settings</a>
-  <a href="admintest.php">User Settings</a>
+  <a href="<?php echo base_url('admin/adminbc"');?>">Building Management</a>
+  <a href="<?php echo base_url('admin/adminci"');?>">Cinema Management</a>
+  <a href="<?php echo base_url('admin/adminms"');?>">Movie Management</a>
+  <a href="<?php echo base_url('admin/adminsc"');?>">Screening Management</a>
+  <a href="<?php echo base_url('admin/adminut"');?>">User Management</a>
+  <a href="<?php echo base_url('admin/admintr"');?>">Transaction Management</a>
 </div>
 
 <div id="main">
@@ -110,14 +112,17 @@ body {
                 <td>".$year."</td> 
                 <td>".$rating."</td>
                 <td>
-                  <button type='button' class='btn' onclick=\"document.getElementById('".$id. "').style.display='block'\">
+				
+				  <button type='button' class='btn' onclick='setVal(".$id.");' data-toggle='modal' data-target='#updateModal'  .style.display='block'\>
                     <span class='glyphicon glyphicon-cog'></span> 
                   </button>
+
+				  
                 </td>
                 <td>
-                  <button type='button' class='btn' onclick=\"document.getElementById('".$id. "').style.display='block'\">
-                    <span class='glyphicon glyphicon-remove'></span> 
-                  </button>
+                  <a href='".base_url('admin/deleteMovie/').$id."'><button type='button' class='btn' .style.display='block'\">
+                    <span class='glyphicon glyphicon-cog'></span> 
+                  </button></a>
                 </td>             
               ";
               echo "</tr>";
@@ -142,7 +147,7 @@ body {
                     <h4 class='modal-title'>Modal Header</h4>
                   </div>
                   <div class='container'>
-                  <form method = 'POST' class='form-horizontal' action='<?php echo 'addMovie';?>'>
+                  <form method = 'POST' class='form-horizontal' action='<?php echo site_url('admin/addMovie')?>'>
                     <div class='form-group'>
                     <label class='control-label col-sm-2' for='email'>Movie Title:</label>
                     <div class='col-sm-3'>
@@ -181,8 +186,61 @@ body {
                   </div>
                 </div>
               </div>
-              </div>
+</div>
 
+<div class='container'>
+                <!-- Modal -->
+                <div class='modal fade' id='updateModal' role='dialog'>
+                <div class='modal-dialog'>
+                
+                  <!-- Modal content-->
+                  <div class='modal-content'>
+                  <div class='modal-header'>
+                    <button type='button' class='close' data-dismiss='modal'>&times;</button>
+                    <h4 class='modal-title'>Modal Header</h4>
+                  </div>
+                  <div class='container'>
+                  <form method = 'POST' class='form-horizontal' action='<?php echo site_url('admin/updateMovie')?>'>
+                    <div class='form-group'>
+					<input id="val" type="hidden" name="movie_id" value="">
+                    <label class='control-label col-sm-2' for='email'>Movie Title:</label>
+                    <div class='col-sm-3'>
+                      <input type='text' class='form-control' name="movie_title" placeholder="Title">
+                    </div>
+                    </div>
+                    <div class='form-group'>
+                    <label class='control-label col-sm-2' for='address'>Movie Description:</label>
+                    <div class='col-sm-3'>
+                      <input type='text' class='form-control' name="movie_desc" placeholder="Description">
+                    </div>
+                    </div>
+                    <div class='form-group'>
+                    <label class='control-label col-sm-2' for='email'>Movie Year:</label>
+                    <div class='col-sm-3'>
+                      <input type='text' class='form-control' name="movie_year" placeholder="Year">
+                    </div>
+                    </div>
+                    <div class='form-group'>
+                    <label class='control-label col-sm-2' for='email'>Movie Rating:</label>
+                    <div class='col-sm-3'>
+                      <input type='text' class='form-control' name="movie_rating" placeholder="Rating">
+                    </div>
+                    </div>
+                
+                    <div class='form-group'> 
+                    <div class='col-sm-offset-2 col-sm-10'>
+                      <button type='submit' class='btn btn-default'>Save</button>
+                    </div>
+                    </div>
+                  </form>
+                </div>
+                  <div class='modal-footer'>
+                    <button type='button' class='btn btn-default' data-dismiss='modal'>Close</button>
+                  </div>
+                  </div>
+                </div>
+				</div>
+</div>
 </body>
 </html> 
 
@@ -195,6 +253,28 @@ function openNav() {
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
+}
+
+var foo = <?php echo $msg_code; ?>;
+
+switch (foo){
+	
+	case 1: <?php echo "alert('DELETE SUCCESS!');"; ?>
+		break;
+	case 2: <?php echo "alert('DELETE FAILED!');";?>
+		break;
+	case 3: <?php echo "alert('UPDATE SUCCESS!');"; ?>
+		break;
+	case 4: <?php echo "alert('UPDATE FAILED!');";?>
+		break;
+	case 5: <?php echo "alert('ADD SUCCESS!');"; ?>
+		break;
+	case 6: <?php echo "alert('ADD FAILED!');";?>
+		break;
+}
+
+function setVal(id){
+	document.getElementById("val").setAttribute("value",id);
 }
 </script>
 
