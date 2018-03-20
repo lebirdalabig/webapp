@@ -61,7 +61,8 @@ body {
 </div>
 
 <div id="main" style="background-color:orange;">
-  <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; WELCOME LE BIRD ALA BIG!</span>
+  <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; Welcome, admin, <?php echo $_SESSION['username']?></span>
+  <a href="Logout" style="float:right;">Logout</a>
 </div>
 
 <script>

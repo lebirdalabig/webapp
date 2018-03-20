@@ -2,6 +2,8 @@
 	class UserModel extends CI_Model {
 
 		private $id;
+		private $username;
+		private $password;
 		private $fname;
 		private $lname;
 		private $bod;
@@ -17,6 +19,22 @@
 		{
 			$query = $this->db->get('user');
             return $query->result();
+		}
+
+		public function userExists($data)
+		{
+			$res = NULL;
+			$query = $this->db->get_where('user', $data);
+			$res = $query->result();
+			print_r($res);
+			return $res;
+		}
+
+		public function register($data)
+		{
+			$sql = "INSERT INTO `movie`(`movie_id`, `movie_title`, `movie_desc`, `movie_year`, `movie_rating`) VALUES ( ? , ? , ? , ? , ? )";
+			$query = $this->db->query($sql, $data);
+			return $query;
 		}
 	}
 

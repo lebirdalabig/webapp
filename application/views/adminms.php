@@ -142,29 +142,29 @@ body {
                     <h4 class='modal-title'>Modal Header</h4>
                   </div>
                   <div class='container'>
-                  <form method = 'POST' class='form-horizontal' action='Admin/addMovie'>
+                  <form method = 'POST' class='form-horizontal' action='<?php echo 'addMovie';?>'>
                     <div class='form-group'>
                     <label class='control-label col-sm-2' for='email'>Movie Title:</label>
                     <div class='col-sm-3'>
-                      <input type='fname' class='form-control' id='mtitles' placeholder="Title">
+                      <input type='text' class='form-control' name='title' placeholder="Title">
                     </div>
                     </div>
                     <div class='form-group'>
                     <label class='control-label col-sm-2' for='address'>Movie Description:</label>
                     <div class='col-sm-3'>
-                      <input type='address' class='form-control' id='mdesc' placeholder="Description">
+                      <input type='text' class='form-control' name='desc' placeholder="Description">
                     </div>
                     </div>
                     <div class='form-group'>
                     <label class='control-label col-sm-2' for='email'>Movie Year:</label>
                     <div class='col-sm-3'>
-                      <input type='lname' class='form-control' id='myear' placeholder="Year">
+                      <input type='text' class='form-control' name='year' placeholder="Year">
                     </div>
                     </div>
                     <div class='form-group'>
                     <label class='control-label col-sm-2' for='email'>Movie Rating:</label>
                     <div class='col-sm-3'>
-                      <input type='lname' class='form-control' id='mrating' placeholder="Rating">
+                      <input type='text' class='form-control' name='rating' placeholder="Rating">
                     </div>
                     </div>
                 

@@ -29,5 +29,15 @@
                         $this->db->update('entries', $this, array('id' => $_POST['id']));
                 }
 
+                public function getMovies($lim = 0, $offset = 0){
+                        $this->db->limit($lim,$offset);
+                        $query = $this->db->get('movie');
+                        return $query->result();
+                }
+
+                public function getMovieCount(){
+                        return $this->db->count_all('movie');
+                }
+
         }
 ?>

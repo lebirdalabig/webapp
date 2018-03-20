@@ -90,7 +90,7 @@
 							  </div>
 							  <div class="form">
 								<h3>Login to your account</h3>
-								<form action="#" method="post">
+								<form action="login" method="post">
 								  <input type="text" name="Username" placeholder="Username" required="">
 								  <input type="password" name="Password" placeholder="Password" required="">
 								  <input type="submit" value="Login">
@@ -102,6 +102,11 @@
 								  <input type="text" name="Username" placeholder="Username" required="">
 								  <input type="password" name="Password" placeholder="Password" required="">
 								  <input type="email" name="Email" placeholder="Email Address" required="">
+								  <input type="text" name="First Name" placeholder="First Name" required="">
+								  <input type="text" name="Last Name" placeholder="Last Name" required="">
+								  <input type="text" name="Phone" placeholder="Phone Number" required="">
+								  <input type="text" name="Phone" placeholder="Phone Number" required="">
+								  <input type="text" name="Phone" placeholder="Phone Number" required="">
 								  <input type="text" name="Phone" placeholder="Phone Number" required="">
 								  <input type="submit" value="Register">
 								</form>
@@ -145,80 +150,10 @@
 					<nav>
 						<ul class="nav navbar-nav">
 							<li class="active"><a href="index.php">Home</a></li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Genres <b class="caret"></b></a>
-								<ul class="dropdown-menu multi-column columns-3">
-									<li>
-									<div class="col-sm-4">
-										<ul class="multi-column-dropdown">
-											<li><a href="genres.php">Action</a></li>
-											<li><a href="genres.php">Biography</a></li>
-											<li><a href="genres.php">Crime</a></li>
-											<li><a href="genres.php">Family</a></li>
-											<li><a href="horror.php">Horror</a></li>
-											<li><a href="genres.php">Romance</a></li>
-											<li><a href="genres.php">Sports</a></li>
-											<li><a href="genres.php">War</a></li>
-										</ul>
-									</div>
-									<div class="col-sm-4">
-										<ul class="multi-column-dropdown">
-											<li><a href="genres.php">Adventure</a></li>
-											<li><a href="comedy.php">Comedy</a></li>
-											<li><a href="genres.php">Documentary</a></li>
-											<li><a href="genres.php">Fantasy</a></li>
-											<li><a href="genres.php">Thriller</a></li>
-										</ul>
-									</div>
-									<div class="col-sm-4">
-										<ul class="multi-column-dropdown">
-											<li><a href="genres.php">Animation</a></li>
-											<li><a href="genres.php">Costume</a></li>
-											<li><a href="genres.php">Drama</a></li>
-											<li><a href="genres.php">History</a></li>
-											<li><a href="genres.php">Musical</a></li>
-											<li><a href="genres.php">Psychological</a></li>
-										</ul>
-									</div>
-									<div class="clearfix"></div>
-									</li>
-								</ul>
-							</li>
-							<li><a href="series.php">tv - series</a></li>
 							
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Country <b class="caret"></b></a>
-								<ul class="dropdown-menu multi-column columns-3">
-									<li>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<li><a href="genres.php">Asia</a></li>
-												<li><a href="genres.php">France</a></li>
-												<li><a href="genres.php">Taiwan</a></li>
-												<li><a href="genres.php">United States</a></li>
-											</ul>
-										</div>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<li><a href="genres.php">China</a></li>
-												<li><a href="genres.php">HongCong</a></li>
-												<li><a href="genres.php">Japan</a></li>
-												<li><a href="genres.php">Thailand</a></li>
-											</ul>
-										</div>
-										<div class="col-sm-4">
-											<ul class="multi-column-dropdown">
-												<li><a href="genres.php">Euro</a></li>
-												<li><a href="genres.php">India</a></li>
-												<li><a href="genres.php">Korea</a></li>
-												<li><a href="genres.php">United Kingdom</a></li>
-											</ul>
-										</div>
-										<div class="clearfix"></div>
-									</li>
-								</ul>
-							</li>
-							<li><a href="short-codes.php">Short Codes</a></li>
+							<li><a href="schedule.php">Cinemas</a></li>
+							<li><a href="<?php echo site_url('users/movies');?>">Movies</a></li>
+							<li><a href="schedule.php">Location</a></li>
 							<li><a href="list.php">A - z list</a></li>
 						</ul>
 					</nav>
@@ -333,7 +268,7 @@
 					foreach($rs as $index=>$row){
 				?>
 					
-								<div class="col-md-2 w3l-movie-gride-agile">
+								<div class="col-md-3 w3l-movie-gride-agile">
 									<a href="single.php" class="hvr-shutter-out-horizontal">
 									<img src="<?php echo base_url("resources/{$row->movie_poster}");?>" title="album-name" class="img-responsive" alt=" " />
 										<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>

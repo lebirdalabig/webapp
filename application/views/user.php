@@ -1,6 +1,10 @@
 <html>
 <head>
 <title>FCC | My Account</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <link href="<?php echo base_url('resources/css/bootstrap.min.css');?>" rel="stylesheet" type="text/css" media="all" />
 <link href="<?php echo base_url('resources/css/style.css');?>" rel="stylesheet" type="text/css" media="all" />
 <link rel="stylesheet" href="<?php echo base_url('resources/css/contactstyle.css');?>" type="text/css" media="all" />
@@ -99,8 +103,11 @@
 			</div>
 			<div class="w3l_sign_in_register">
 				<ul>
-					<li><i class="fa fa-phone" aria-hidden="true"></i> (+63) 915 777 5831</li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
+					<li><i class="" aria-hidden="true"><a href="user/usersettings"><span class="glyphicon glyphicon-user"></span></a></i>Welcome 
+					<?php
+						echo $_SESSION['username'];
+					?></li>
+					<li><a href="logout" >Logout</a></li>
 				</ul>
 			</div>
 			<div class="clearfix"> </div>
