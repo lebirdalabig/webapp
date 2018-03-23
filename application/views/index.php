@@ -343,25 +343,25 @@
 			<div class="col-md-7 w3ls_footer_grid1_right">
 				<ul>
 					<li>
-						<a href="genres.php">Movies</a>
+						<a href="<?php echo base_url('/welcome/genres"');?>">Movies</a>
 					</li>
 					<li>
-						<a href="<?php echo base_url('index.php/faq"');?>">FAQ</a>
+						<a href="<?php echo base_url('/welcome/faq"');?>">FAQ</a>
 					</li>
 					<li>
-						<a href="horror.php">Action</a>
+						<a href="<?php echo base_url('/welcome/horror"');?>">Action</a>
 					</li>
 					<li>
-						<a href="genres.php">Adventure</a>
+						<a href="<?php echo base_url('/welcome/genres"');?>">Adventure</a>
 					</li>
 					<li>
-						<a href="comedy.php">Comedy</a>
+						<a href="<?php echo base_url('/welcome/comedy"');?>">Comedy</a>
 					</li>
 					<li>
-						<a href="icons.php">Icons</a>
+						<a href="<?php echo base_url('/welcome/icons"');?>">Icons</a>
 					</li>
 					<li>
-						<a href="<?php echo base_url('index.php/contact"');?>">Contact Us</a>
+						<a href="<?php echo base_url('/welcome/contact"');?>">Contact Us</a>
 					</li>
 				</ul>
 			</div>

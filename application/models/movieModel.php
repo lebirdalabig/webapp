@@ -12,12 +12,25 @@
 			$query = $this->db->get('movie');
             return $query->result();
 		}
-
-		public function add_movie($data)
+		
+		public function addMovie($form_data)
 		{
-			$sql = "INSERT INTO `movie`(`movie_id`, `movie_title`, `movie_desc`, `movie_year`, `movie_rating`) VALUES ( ? , ? , ? , ? , ? )";
-			$query = $this->db->query($sql, $data);
-			return $query;
+			return $this->db->insert('movie', $form_data);
+		}
+		
+		public function deleteMovie($movie_id)
+		{
+			$sql = "DELETE FROM `movie` WHERE movie_id = ? ";
+			return $this->db->query($sql, $movie_id);
+		}
+		
+		public function updateMovie($form_data)
+		{
+			$m_id = $form_data['movie_id'];
+			unset($form_data['movie_id']);
+			$this->db->where('movie_id',$m_id);
+			//print_r ($form_data);
+			return $this->db->update('movie', $form_data);
 		}
 	}
 

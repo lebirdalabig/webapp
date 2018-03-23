@@ -9,26 +9,26 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
 		function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //for-mobile-apps -->
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="css/faqstyle.css" type="text/css" media="all" />
-<link href="css/medile.css" rel='stylesheet' type='text/css' />
-<link href="css/single.css" rel='stylesheet' type='text/css' />
-<link rel="stylesheet" href="css/contactstyle.css" type="text/css" media="all" />
+<link href="<?php echo base_url('resources/css/bootstrap.css');?>" rel="stylesheet" type="text/css" media="all" />
+<link href="<?php echo base_url('resources/css/style.css');?>" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="<?php echo base_url('resources/css/faqstyle.css');?>" type="text/css" media="all" />
+<link href="<?php echo base_url('resources/css/medile.css');?>" rel='stylesheet' type='text/css' />
+<link href="<?php echo base_url('resources/css/single.css');?>" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="<?php echo base_url('resources/css/contactstyle.css');?>" type="text/css" media="all" />
 <!-- font-awesome icons -->
-<link rel="stylesheet" href="css/font-awesome.min.css" />
+<link rel="stylesheet" href="<?php echo base_url('resources/css/font-awesome.min.css');?>" />
 <!-- //font-awesome icons -->
 <!-- news-css -->
-<link rel="stylesheet" href="news-css/news.css" type="text/css" media="all" />
+<link rel="stylesheet" href="<?php echo base_url('resources/news-css/news.css');?>" type="text/css" media="all" />
 <!-- //news-css -->
 <!-- list-css -->
-<link rel="stylesheet" href="list-css/list.css" type="text/css" media="all" />
+<link rel="stylesheet" href="<?php echo base_url('resources/list-css/list.css');?>" type="text/css" media="all" />
 <!-- //list-css -->
 <!-- js -->
-<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url('resources/js/jquery-2.1.4.min.js');?>"></script>
 <!-- start-smoth-scrolling -->
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript" src="<?php echo base_url('resources/js/move-top.js');?>"></script>
+<script type="text/javascript" src="<?php echo base_url('resources/js/easing.js');?>"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
 		$(".scroll").click(function(event){		
@@ -1292,25 +1292,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<div class="col-md-7 w3ls_footer_grid1_right">
 				<ul>
 					<li>
-						<a href="genres.php">Movies</a>
+						<a href="<?php echo base_url('/welcome/genres');?>">Movies</a>
 					</li>
 					<li>
-						<a href="faq.php">FAQ</a>
+						<a href="<?php echo base_url('/welcome/faq');?>">FAQ</a>
 					</li>
 					<li>
-						<a href="horror.php">Action</a>
+						<a href="<?php echo base_url('/welcome/horror');?>">Action</a>
 					</li>
 					<li>
-						<a href="genres.php">Adventure</a>
+						<a href="<?php echo base_url('/welcome/genres');?>">Adventure</a>
 					</li>
 					<li>
-						<a href="comedy.php">Comedy</a>
+						<a href="<?php echo base_url('/welcome/comedy');?>">Comedy</a>
 					</li>
 					<li>
-						<a href="icons.php">Icons</a>
+						<a href="<?php echo base_url('/welcome/icons');?>">Icons</a>
 					</li>
 					<li>
-						<a href="contact.php">Contact Us</a>
+						<a href="<?php echo base_url('/welcome/contact');?>">Contact Us</a>
 					</li>
 				</ul>
 			</div>
@@ -1319,7 +1319,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 <!-- //footer -->
 <!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+<script src="j<?php echo base_url('resources/js/bootstrap.min.js');?>"></script>
 <script>
 $(document).ready(function(){
     $(".dropdown").hover(            

@@ -46,13 +46,43 @@ class Welcome extends CI_Controller {
 					{
 						redirect('admin/index');
 					}else{
-						redirect('users/index');
+						redirect('user/index');
 					}
 			}else{
 				redirect('welcome/index');
 				echo "you're logged out!";
 			}
 		}
+	}
+
+	public function faq()
+	{
+		$this->load->view('faq');
+	}
+
+	public function genres()
+	{
+		$this->load->view('genres');
+	}
+
+	public function horror()
+	{
+		$this->load->view('horror');
+	}
+
+	public function comedy()
+	{
+		$this->load->view('comedy');
+	}
+
+	public function contact()
+	{
+		$this->load->view('contact');
+	}
+
+	public function icons()
+	{
+		$this->load->view('icons');
 	}
 
 	public function logout()
