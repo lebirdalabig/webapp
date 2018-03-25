@@ -7,7 +7,9 @@ class User extends CI_Controller {
                 $this->load->model('movie_model');
                 $res = $this->movie_model->get_last_ten_entries();
                 $data['rs'] = $res;
+                $this->load->view('header');
                 $this->load->view('user',$data);
+                $this->load->view('footer');
             }
         }
 
@@ -42,5 +44,47 @@ class User extends CI_Controller {
         {
             $this->session->sess_destroy();
             redirect('welcome/index');
+        }
+
+        public function faq()
+        {
+            $this->load->view('header');
+            $this->load->view('faq');
+            $this->load->view('footer');
+        }
+
+        public function genres()
+        {
+            $this->load->view('header');
+            $this->load->view('genres');
+            $this->load->view('footer');
+        }
+
+        public function horror()
+        {
+            $this->load->view('header');
+            $this->load->view('horror');
+            $this->load->view('footer');
+        }
+
+        public function comedy()
+        {
+            $this->load->view('header');
+            $this->load->view('comedy');
+            $this->load->view('footer');
+        }
+
+        public function contact()
+        {
+            $this->load->view('header');
+            $this->load->view('contact');
+            $this->load->view('footer');
+        }
+
+        public function icons()
+        {
+            $this->load->view('header');
+            $this->load->view('icons');
+            $this->load->view('footer');
         }
 }

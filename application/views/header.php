@@ -1,10 +1,9 @@
 <html>
 <head>
-<title>FCC | Home</title>
 <link href="<?php echo base_url('resources/css/bootstrap.css');?>" rel="stylesheet" type="text/css" media="all" />
 <link href="<?php echo base_url('resources/css/style.css');?>" rel="stylesheet" type="text/css" media="all" />
 <link rel="stylesheet" href="<?php echo base_url('resources/css/contactstyle.css');?>" type="text/css" media="all" />
-<link rel="stylesheet" href="<?php echo base_url('resources/css/faqstyle.css" type="text/css');?>" media="all" />
+<link rel="stylesheet" href="<?php echo base_url('resources/css/faqstyle.css');?>" type="text/css');?>" media="all" />
 <link href="<?php echo base_url('resources/css/single.css');?>" rel='stylesheet' type='text/css' />
 <link href="<?php echo base_url('resources/css/medile.css');?>" rel='stylesheet' type='text/css' />
 <!-- banner-slider -->
@@ -14,7 +13,7 @@
 <link href="<?php echo base_url('resources/css/popuo-box.css');?>" rel="stylesheet" type="text/css" media="all" />
 <!-- //pop-up -->
 <!-- font-awesome icons -->
-<link rel="stylesheet" href="<?php echo base_url('resources/css/font-awesome.min.css"');?> />
+<link rel="stylesheet" href="<?php echo base_url('resources/css/font-awesome.min.css');?>" />
 <!-- //font-awesome icons -->
 <!-- js -->
 <script type="text/javascript" src="<?php echo base_url('resources/js/jquery-2.1.4.min.js');?>""></script>
@@ -55,7 +54,7 @@
 	<div class="header">
 		<div class="container">
 			<div class="w3layouts_logo">
-				<image src="<?php echo base_url('resources/images/fcc.png');?>" style="width:70px; float:left;">
+				<image src="<?php echo base_url('resources/images/fcc.png');?>" style="width:70px; float:left;"/>
 			</div>
 			<div class="w3_search">
 				<form action="#" method="post">
@@ -65,10 +64,42 @@
 			</div>
 			<div class="w3l_sign_in_register">
 				<ul>
-					<li><i class="fa fa-phone" aria-hidden="true"></i> (+63) 915 777 5831</li>
-					<li><a href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
+					<li><i class="" aria-hidden="true"><a href="user/usersettings"><span class="glyphicon glyphicon-user"></span></a></i>Welcome 
+					<?php
+						echo $_SESSION['username'];
+					?></li>
+					<li><a href="logout" >Logout</a></li>
 				</ul>
 			</div>
 			<div class="clearfix"> </div>
 		</div>
 	</div>
+<!-- //header -->
+<!-- nav -->
+	<div class="movies_nav">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header navbar-left">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<nav>
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="<?php echo base_url ('index.php');?>">Home</a></li>
+							
+							<li><a href="schedule.php">Snacks</a></li>
+							<li><a href="<?php echo site_url('user/movies');?>">Movies</a></li>
+							<li><a href="schedule.php">Location</a></li>
+						</ul>
+					</nav>
+				</div>
+			</nav>	
+		</div>
+	</div>
+<!-- //nav -->

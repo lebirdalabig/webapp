@@ -23,7 +23,9 @@ class Welcome extends CI_Controller {
 		$this->load->model('movie_model');
 		$res = $this->movie_model->get_last_ten_entries();
 		$data['rs'] = $res;
+		$this->load->view('header_guest');
 		$this->load->view('index', $data);
+		$this->load->view('footer_guest');
 	}
 
 	public function login()
@@ -57,32 +59,44 @@ class Welcome extends CI_Controller {
 
 	public function faq()
 	{
+		$this->load->view('header_guest');
 		$this->load->view('faq');
+		$this->load->view('footer_guest');
 	}
 
 	public function genres()
 	{
+		$this->load->view('header_guest');
 		$this->load->view('genres');
+		$this->load->view('footer_guest');
 	}
 
 	public function horror()
 	{
+		$this->load->view('header_guest');
 		$this->load->view('horror');
+		$this->load->view('footer_guest');
 	}
 
 	public function comedy()
 	{
+		$this->load->view('header_guest');
 		$this->load->view('comedy');
+		$this->load->view('footer_guest');
 	}
 
 	public function contact()
 	{
+		$this->load->view('header_guest');
 		$this->load->view('contact');
+		$this->load->view('footer_guest');
 	}
 
 	public function icons()
 	{
+		$this->load->view('header_guest');
 		$this->load->view('icons');
+		$this->load->view('footer_guest');
 	}
 
 	public function logout()

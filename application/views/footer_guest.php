@@ -32,25 +32,25 @@
 			<div class="col-md-7 w3ls_footer_grid1_right">
 				<ul>
 					<li>
-						<a href="<?php echo base_url('/user/genres"');?>">Movies</a>
+						<a href="<?php echo base_url('/welcome/genres"');?>">Movies</a>
 					</li>
 					<li>
-						<a href="<?php echo base_url('/user/faq"');?>">FAQ</a>
+						<a href="<?php echo base_url('/welcome/faq"');?>">FAQ</a>
 					</li>
 					<li>
-						<a href="<?php echo base_url('/user/horror"');?>">Action</a>
+						<a href="<?php echo base_url('/welcome/horror"');?>">Action</a>
 					</li>
 					<li>
-						<a href="<?php echo base_url('/user/genres"');?>">Adventure</a>
+						<a href="<?php echo base_url('/welcome/genres"');?>">Adventure</a>
 					</li>
 					<li>
-						<a href="<?php echo base_url('/user/comedy"');?>">Comedy</a>
+						<a href="<?php echo base_url('/welcome/comedy"');?>">Comedy</a>
 					</li>
 					<li>
-						<a href="<?php echo base_url('/user/icons"');?>">Icons</a>
+						<a href="<?php echo base_url('/welcome/icons"');?>">Icons</a>
 					</li>
 					<li>
-						<a href="<?php echo base_url('/user/contact"');?>">Contact Us</a>
+						<a href="<?php echo base_url('/welcome/contact"');?>">Contact Us</a>
 					</li>
 				</ul>
 			</div>

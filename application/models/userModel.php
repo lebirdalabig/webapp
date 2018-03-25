@@ -32,9 +32,7 @@
 
 		public function register($data)
 		{
-			$sql = "INSERT INTO `movie`(`movie_id`, `movie_title`, `movie_desc`, `movie_year`, `movie_rating`) VALUES ( ? , ? , ? , ? , ? )";
-			$query = $this->db->query($sql, $data);
-			return $query;
+			
 		}
 	}
 
