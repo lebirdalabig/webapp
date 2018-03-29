@@ -47,9 +47,6 @@
 						<a href="<?php echo base_url('/welcome/comedy"');?>">Comedy</a>
 					</li>
 					<li>
-						<a href="<?php echo base_url('/welcome/icons"');?>">Icons</a>
-					</li>
-					<li>
 						<a href="<?php echo base_url('/welcome/contact"');?>">Contact Us</a>
 					</li>
 				</ul>
