@@ -1,4 +1,16 @@
-<div class="general_social_icons">
+</div>
+		<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+			<nav>
+				<ul class="nav navbar-nav">
+				<li><a href="<?php echo base_url ('/welcome/location');?>">SM CEBU</a></li>
+					
+				<li><a href="<?php echo base_url('/welcome/locationayala');?>">AYALA</a></li>
+				<li><a href="<?php echo site_url('/welcome/locationgalleria');?>">ROBINSONS GALLERIA</a></li>
+				<li><a href="<?php echo base_url('/welcome/locationseaside');?>">SM SEASIDE</a></li>
+				</ul>
+			</nav>
+</div>
+		<div class="general_social_icons">
 	<nav class="social">
 		<ul>
 			<li class="w3_twitter"><a href="https://twitter.com/?lang=en" target="_blank">Twitter <i class="fa fa-twitter"></i></a></li>
@@ -7,6 +19,7 @@
   </nav>
 </div>
 <!-- footer -->
+
 	<div class="footer">
 		<div class="container">
 			<div class="w3ls_footer_grid">
@@ -32,19 +45,19 @@
 			<div class="col-md-7 w3ls_footer_grid1_right">
 				<ul>
 					<li>
-						<a href="<?php echo base_url('/user/genres"');?>">Movies</a>
+						<a href="<?php echo base_url('/welcome/genres"');?>">Movies</a>
 					</li>
 					<li>
-						<a href="<?php echo base_url('/user/horror"');?>">Action</a>
+						<a href="<?php echo base_url('/welcome/horror"');?>">Action</a>
 					</li>
 					<li>
-						<a href="<?php echo base_url('/user/genres"');?>">Adventure</a>
+						<a href="<?php echo base_url('/welcome/genres"');?>">Adventure</a>
 					</li>
 					<li>
-						<a href="<?php echo base_url('/user/comedy"');?>">Comedy</a>
+						<a href="<?php echo base_url('/welcome/comedy"');?>">Comedy</a>
 					</li>
 					<li>
-						<a href="<?php echo base_url('/user/contact"');?>">Contact Us</a>
+						<a href="<?php echo base_url('/welcome/contact"');?>">Contact Us</a>
 					</li>
 				</ul>
 			</div>

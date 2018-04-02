@@ -59,7 +59,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<!-- /latest-movies1 -->
 							    <div class="browse-inner-come-agile-w3">
 							   <div class="col-md-2 w3l-movie-gride-agile">
-										 <a href="single.php" class="hvr-shutter-out-horizontal"><img src="images/h1.jpg" title="album-name" alt=" " />
+										 <a href="single.php" class="hvr-shutter-out-horizontal"><img src="<?php echo base_url('resources/images/h1.jpg');?>" title="album-name" alt=" " />
 									     <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 									</a>
 									  <div class="mid-1">
@@ -90,7 +90,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>	
 									</div>
 								   <div class="col-md-2 w3l-movie-gride-agile">
-										 <a href="single.php" class="hvr-shutter-out-horizontal"><img src="images/h2.jpg" title="album-name" alt=" " />
+										 <a href="single.php" class="hvr-shutter-out-horizontal"><img src="<?php echo base_url('resources/images/h2.jpg');?>" title="album-name" alt=" " />
 									     <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 									</a>
 									  <div class="mid-1">
@@ -120,7 +120,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>	
 									</div>
 								    <div class="col-md-2 w3l-movie-gride-agile">
-										 <a href="single.php" class="hvr-shutter-out-horizontal"><img src="images/h3.jpg" title="album-name" alt=" " />
+										 <a href="single.php" class="hvr-shutter-out-horizontal"><img src="<?php echo base_url('resources/images/h3.jpg');?>" title="album-name" alt=" " />
 									     <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 									</a>
 									  <div class="mid-1">
@@ -150,7 +150,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>	
 									</div>
 									<div class="col-md-2 w3l-movie-gride-agile">
-										  <a href="single.php" class="hvr-shutter-out-horizontal"><img src="images/h4.jpg" title="album-name" alt=" " />
+										  <a href="single.php" class="hvr-shutter-out-horizontal"><img src="<?php echo base_url('resources/images/h4.jpg');?>" title="album-name" alt=" " />
 									     <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 									</a>
 									  <div class="mid-1">
@@ -180,7 +180,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>	
 									</div>
 										<div class="col-md-2 w3l-movie-gride-agile">
-										<a href="single.php" class="hvr-shutter-out-horizontal"><img src="images/h5.jpg" title="album-name" alt=" " />
+										<a href="single.php" class="hvr-shutter-out-horizontal"><img src="<?php echo base_url('resources/images/h5.jpg');?>" title="album-name" alt=" " />
 									     <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 									</a>
 									  <div class="mid-1">
@@ -210,7 +210,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>	
 									</div>
 									<div class="col-md-2 w3l-movie-gride-agile">
-										 <a href="single.php" class="hvr-shutter-out-horizontal"><img src="images/h6.jpg" title="album-name" alt=" " />
+										 <a href="single.php" class="hvr-shutter-out-horizontal"><img src="<?php echo base_url('resources/images/h6.jpg');?>" title="album-name" alt=" " />
 									     <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 									</a>
 									  <div class="mid-1">
@@ -246,7 +246,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<!-- /latest-movies1 -->
 							    <div class="browse-inner-come-agile-w3">
 							   <div class="col-md-2 w3l-movie-gride-agile">
-										 <a href="single.php" class="hvr-shutter-out-horizontal"><img src="images/h7.jpg" title="album-name" alt=" " />
+										 <a href="single.php" class="hvr-shutter-out-horizontal"><img src="<?php echo base_url('resources/images/h7.jpg');?>" title="album-name" alt=" " />
 									     <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 									</a>
 									  <div class="mid-1">
@@ -276,7 +276,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>	
 									</div>
 								   <div class="col-md-2 w3l-movie-gride-agile">
-										 <a href="single.php" class="hvr-shutter-out-horizontal"><img src="images/h8.jpg" title="album-name" alt=" " />
+										 <a href="single.php" class="hvr-shutter-out-horizontal"><img src="<?php echo base_url('resources/images/h8.jpg');?>" title="album-name" alt=" " />
 									     <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 									</a>
 									  <div class="mid-1">
@@ -306,7 +306,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>	
 									</div>
 								    <div class="col-md-2 w3l-movie-gride-agile">
-										 <a href="single.php" class="hvr-shutter-out-horizontal"><img src="images/h9.jpg" title="album-name" alt=" " />
+										 <a href="single.php" class="hvr-shutter-out-horizontal"><img src="<?php echo base_url('resources/images/h9.jpg');?>" title="album-name" alt=" " />
 									     <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 									</a>
 									  <div class="mid-1">
@@ -336,7 +336,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>	
 									</div>
 									<div class="col-md-2 w3l-movie-gride-agile">
-										  <a href="single.php" class="hvr-shutter-out-horizontal"><img src="images/h10.jpg" title="album-name" alt=" " />
+										  <a href="single.php" class="hvr-shutter-out-horizontal"><img src="<?php echo base_url('resources/images/h10.jpg');?>" title="album-name" alt=" " />
 									     <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 									</a>
 									  <div class="mid-1">
@@ -366,7 +366,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>	
 									</div>
 										<div class="col-md-2 w3l-movie-gride-agile">
-										<a href="single.php" class="hvr-shutter-out-horizontal"><img src="images/h11.jpg" title="album-name" alt=" " />
+										<a href="single.php" class="hvr-shutter-out-horizontal"><img src="<?php echo base_url('resources/images/h11.jpg');?>" title="album-name" alt=" " />
 									     <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 									</a>
 									  <div class="mid-1">
@@ -396,7 +396,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>	
 									</div>
 									<div class="col-md-2 w3l-movie-gride-agile">
-										 <a href="single.php" class="hvr-shutter-out-horizontal"><img src="images/h12.jpg" title="album-name" alt=" " />
+										 <a href="single.php" class="hvr-shutter-out-horizontal"><img src="<?php echo base_url('resources/images/h12.jpg');?>" title="album-name" alt=" " />
 									     <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 									</a>
 									  <div class="mid-1">
@@ -431,7 +431,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									<!-- /latest-movies1 -->
 							    <div class="browse-inner-come-agile-w3">
 							   <div class="col-md-2 w3l-movie-gride-agile">
-										 <a href="single.php" class="hvr-shutter-out-horizontal"><img src="images/h1.jpg" title="album-name" alt=" " />
+										 <a href="single.php" class="hvr-shutter-out-horizontal"><img src="<?php echo base_url('resources/images/h1.jpg');?>" title="album-name" alt=" " />
 									     <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 									</a>
 									  <div class="mid-1">
@@ -462,7 +462,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>	
 									</div>
 								   <div class="col-md-2 w3l-movie-gride-agile">
-										 <a href="single.php" class="hvr-shutter-out-horizontal"><img src="images/h2.jpg" title="album-name" alt=" " />
+										 <a href="single.php" class="hvr-shutter-out-horizontal"><img src="<?php echo base_url('resources/images/h2.jpg');?>" title="album-name" alt=" " />
 									     <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 									</a>
 									  <div class="mid-1">
@@ -492,7 +492,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>	
 									</div>
 								    <div class="col-md-2 w3l-movie-gride-agile">
-										 <a href="single.php" class="hvr-shutter-out-horizontal"><img src="images/h3.jpg" title="album-name" alt=" " />
+										 <a href="single.php" class="hvr-shutter-out-horizontal"><img src="<?php echo base_url('resources/images/h3.jpg');?>" title="album-name" alt=" " />
 									     <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 									</a>
 									  <div class="mid-1">
@@ -522,7 +522,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>	
 									</div>
 									<div class="col-md-2 w3l-movie-gride-agile">
-										  <a href="single.php" class="hvr-shutter-out-horizontal"><img src="images/h4.jpg" title="album-name" alt=" " />
+										  <a href="single.php" class="hvr-shutter-out-horizontal"><img src="<?php echo base_url('resources/images/h4.jpg');?>" title="album-name" alt=" " />
 									     <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 									</a>
 									  <div class="mid-1">
@@ -552,7 +552,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>	
 									</div>
 										<div class="col-md-2 w3l-movie-gride-agile">
-										<a href="single.php" class="hvr-shutter-out-horizontal"><img src="images/h5.jpg" title="album-name" alt=" " />
+										<a href="single.php" class="hvr-shutter-out-horizontal"><img src="<?php echo base_url('resources/images/h5.jpg');?>" title="album-name" alt=" " />
 									     <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 									</a>
 									  <div class="mid-1">
@@ -582,7 +582,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>	
 									</div>
 									<div class="col-md-2 w3l-movie-gride-agile">
-										 <a href="single.php" class="hvr-shutter-out-horizontal"><img src="images/h6.jpg" title="album-name" alt=" " />
+										 <a href="single.php" class="hvr-shutter-out-horizontal"><img src="<?php echo base_url('resources/images/h6.jpg');?>" title="album-name" alt=" " />
 									     <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 									</a>
 									  <div class="mid-1">
@@ -637,7 +637,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<div id="owl-demo" class="owl-carousel owl-theme">
 									<div class="item">
 										<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
-											<a href="single.php" class="hvr-shutter-out-horizontal"><img src="images/m13.jpg" title="album-name" class="img-responsive" alt=" " />
+											<a href="single.php" class="hvr-shutter-out-horizontal"><img src="<?php echo base_url('resources/images/m13.jpg');?>" title="album-name" class="img-responsive" alt=" " />
 												<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 											</a>
 											<div class="mid-1 agileits_w3layouts_mid_1_home">
@@ -665,7 +665,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 									<div class="item">
 										<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
-											<a href="single.php" class="hvr-shutter-out-horizontal"><img src="images/m11.jpg" title="album-name" class="img-responsive" alt=" " />
+											<a href="single.php" class="hvr-shutter-out-horizontal"><img src="<?php echo base_url('resources/images/m11.jpg');?>" title="album-name" class="img-responsive" alt=" " />
 												<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 											</a>
 											<div class="mid-1 agileits_w3layouts_mid_1_home">
@@ -693,7 +693,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 									<div class="item">
 										<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
-											<a href="single.php" class="hvr-shutter-out-horizontal"><img src="images/m12.jpg" title="album-name" class="img-responsive" alt=" " />
+											<a href="single.php" class="hvr-shutter-out-horizontal"><img src="<?php echo base_url('resources/images/m12.jpg');?>" title="album-name" class="img-responsive" alt=" " />
 												<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 											</a>
 											<div class="mid-1 agileits_w3layouts_mid_1_home">
@@ -721,7 +721,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 									<div class="item">
 										<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
-											<a href="single.php" class="hvr-shutter-out-horizontal"><img src="images/m7.jpg" title="album-name" class="img-responsive" alt=" " />
+											<a href="single.php" class="hvr-shutter-out-horizontal"><img src="<?php echo base_url('resources/images/m7.jpg');?>" title="album-name" class="img-responsive" alt=" " />
 												<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 											</a>
 											<div class="mid-1 agileits_w3layouts_mid_1_home">
@@ -749,7 +749,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 									<div class="item">
 										<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
-											<a href="single.php" class="hvr-shutter-out-horizontal"><img src="images/m8.jpg" title="album-name" class="img-responsive" alt=" " />
+											<a href="single.php" class="hvr-shutter-out-horizontal"><img src="<?php echo base_url('resources/images/m8.jpg');?>" title="album-name" class="img-responsive" alt=" " />
 												<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 											</a>
 											<div class="mid-1 agileits_w3layouts_mid_1_home">
@@ -777,7 +777,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 									<div class="item">
 										<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
-											<a href="single.php" class="hvr-shutter-out-horizontal"><img src="images/m9.jpg" title="album-name" class="img-responsive" alt=" " />
+											<a href="single.php" class="hvr-shutter-out-horizontal"><img src="<?php echo base_url('resources/images/m9.jpg');?>" title="album-name" class="img-responsive" alt=" " />
 												<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 											</a>
 											<div class="mid-1 agileits_w3layouts_mid_1_home">
@@ -805,7 +805,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 									<div class="item">
 										<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
-											<a href="single.php" class="hvr-shutter-out-horizontal"><img src="images/m10.jpg" title="album-name" class="img-responsive" alt=" " />
+											<a href="single.php" class="hvr-shutter-out-horizontal"><img src="<?php echo base_url('resources/images/m10.jpg');?>" title="album-name" class="img-responsive" alt=" " />
 												<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 											</a>
 											<div class="mid-1 agileits_w3layouts_mid_1_home">
@@ -833,7 +833,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 									<div class="item">
 										<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
-											<a href="single.php" class="hvr-shutter-out-horizontal"><img src="images/m17.jpg" title="album-name" class="img-responsive" alt=" " />
+											<a href="single.php" class="hvr-shutter-out-horizontal"><img src="<?php echo base_url('resources/images/m17.jpg');?>" title="album-name" class="img-responsive" alt=" " />
 												<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 											</a>
 											<div class="mid-1 agileits_w3layouts_mid_1_home">
@@ -861,7 +861,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 									</div>
 									<div class="item">
 										<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
-											<a href="single.php" class="hvr-shutter-out-horizontal"><img src="images/m15.jpg" title="album-name" class="img-responsive" alt=" " />
+											<a href="single.php" class="hvr-shutter-out-horizontal"><img src="<?php echo base_url('resources/images/m15.jpg');?>" title="album-name" class="img-responsive" alt=" " />
 												<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 											</a>
 											<div class="mid-1 agileits_w3layouts_mid_1_home">

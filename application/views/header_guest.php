@@ -50,7 +50,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div>
 			<div class="w3l_sign_in_register">
 				<ul>
-					<li><i class="fa fa-phone" aria-hidden="true"></i> (+000) 123 345 653</li>
+					<li></li>
 					<li><a href="#" data-toggle="modal" data-target="#myModal">Login</a></li>
 				</ul>
 			</div>
@@ -85,12 +85,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 							  </div>
 							  <div class="form">
 								<h3>Create an account</h3>
-								<form action="#" method="post">
-								  <input type="text" name="Username" placeholder="Username" required="">
+								<form action="<?php echo site_url('user/register')?>" method="POST">
+								  <div class='form-group'>
+					                    <input type='text' class='form-control' name='username' placeholder="Username">
+				                   </div>
 								  <input type="password" name="Password" placeholder="Password" required="">
-								  <input type="email" name="Email" placeholder="Email Address" required="">
-								  <input type="text" name="First Name" placeholder="First Name" required="">
-								  <input type="text" name="Last Name" placeholder="Last Name" required="">
+								  <input type="email" name="email" placeholder="Email Address" required="">
+								  <input type="text" name="fName" placeholder="First Name" required="">
+								  <input type="text" name="lName" placeholder="Last Name" required="">
 								  <input type="text" name="Phone" placeholder="Phone Number" required="">
 								  <input type="submit" value="Register">
 								</form>
@@ -133,11 +135,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav>
 						<ul class="nav navbar-nav">
-							<li class="active"><a href="<?php echo base_url ('index.php');?>">Home</a></li>
-							
-							<li><a href="schedule.php">Snacks</a></li>
-							<li><a href="<?php echo site_url('user/movies');?>">Movies</a></li>
-							<li><a href="schedule.php">Location</a></li>
+							<li><a href="<?php echo base_url ('/welcome/index');?>">Home</a></li>
+							<li><a href="<?php echo base_url('/welcome/snacks"');?>">Snacks</a></li>
+							<li><a href="<?php echo site_url('/welcome/movies');?>">Movies</a></li>
+							<li><a href="<?php echo base_url('/welcome/location');?>">Location</a></li>
 						</ul>
 					</nav>
 				</div>

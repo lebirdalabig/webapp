@@ -58,6 +58,9 @@ body {
   .sidenav a {font-size: 18px;}
 }
 </style>
+<div id="main" style="background-color:orange;">
+  <span style="font-size:30px;cursor:pointer;" onclick="openNav()">&#9776; WELCOME ADMIN!</span>
+</div>
 
 </head>
 <body>
@@ -73,7 +76,6 @@ body {
 </div>
 
 <div id="main">
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; LIST OF MOVIES</span>
   
   <div>
   <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">ADD MOVIE</button>
@@ -144,7 +146,7 @@ body {
                   <div class='modal-content'>
                   <div class='modal-header'>
                     <button type='button' class='close' data-dismiss='modal'>&times;</button>
-                    <h4 class='modal-title'>Modal Header</h4>
+                    <h4 class='modal-title'>ADD MOVIE</h4>
                   </div>
                   <div class='container'>
                   <form method = 'POST' class='form-horizontal' action='<?php echo site_url('admin/addMovie')?>'>
@@ -202,7 +204,7 @@ body {
                   <div class='container'>
                   <form method = 'POST' class='form-horizontal' action='<?php echo site_url('admin/updateMovie')?>'>
                     <div class='form-group'>
-					<input id="val" type="hidden" name="movie_id" value="">
+					             <input id="val" type="hidden" name="movie_id" value="">
                     <label class='control-label col-sm-2' for='email'>Movie Title:</label>
                     <div class='col-sm-3'>
                       <input type='text' class='form-control' name="movie_title" placeholder="Title">

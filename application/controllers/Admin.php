@@ -51,7 +51,7 @@ class Admin extends CI_Controller {
 				'movie_poster' => ""
 			);
 			//print_r($form_data);
-			$res = $this->movieModel->addMovie($form_data);
+			$res = $this->movieModel->register($form_data);
 			//echo $res;
 			if($res){
 				redirect(base_url('admin/adminms/5'),'refresh');

@@ -1,3 +1,15 @@
+</div>
+		<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+			<nav>
+				<ul class="nav navbar-nav">
+				<li><a href="<?php echo base_url ('/user/location');?>">SM CEBU</a></li>
+					
+				<li><a href="<?php echo base_url('/user/locationayala');?>">AYALA</a></li>
+				<li><a href="<?php echo site_url('/user/locationgalleria');?>">ROBINSONS GALLERIA</a></li>
+				<li><a href="<?php echo base_url('/user/locationseaside');?>">SM SEASIDE</a></li>
+				</ul>
+			</nav>
+		</div>
 <div class="general_social_icons">
 	<nav class="social">
 		<ul>

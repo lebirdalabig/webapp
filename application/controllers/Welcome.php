@@ -33,7 +33,7 @@ class Welcome extends CI_Controller {
 		if($_SERVER['REQUEST_METHOD'] === 'POST')
 		{
 			$data = array(
-				'username' => $this->input->post('Username'),
+				'username' => $this->input->post('Username'),	
 				'password' => $this->input->post('Password') 
 				);
 
@@ -57,12 +57,20 @@ class Welcome extends CI_Controller {
 		}
 	}
 
-	public function faq()
-	{
-		$this->load->view('header_guest');
-		$this->load->view('faq');
-		$this->load->view('footer_guest');
-	}
+	public function movies($off = 0){
+			$this->load->view('header_guest');
+            $this->load->model('movie_model');
+
+            $config['base_url'] = base_url('/welcome/movies');
+            $config['total_rows'] = $this->movie_model->getMovieCount();
+            $config['per_page'] = 10;
+
+            $this->pagination->initialize($config);
+
+            $data['res'] = $this->movie_model->getMovies($config['per_page'],$off);
+            $this->load->view('displayMovies',$data);
+            $this->load->view('footer_guest');
+    }
 
 	public function genres()
 	{
@@ -89,15 +97,56 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('header_guest');
 		$this->load->view('contact');
+		$this->load->library('email');
+
+		$this->email->from('your@example.com', 'Your Name');
+		$this->email->to('von.arimbay598@gmail.com');
+		$this->email->cc('von.arimbay598@gmail.com');
+		$this->email->bcc('von.arimbay598@gmail.com');
+
+		$this->email->subject('Email Test');
+		$this->email->message('Testing the email class.');
+
+		$this->email->send();
 		$this->load->view('footer_guest');
 	}
 
-	public function icons()
+	public function snacks()
 	{
 		$this->load->view('header_guest');
-		$this->load->view('icons');
+		$this->load->view('snacks');
 		$this->load->view('footer_guest');
 	}
+
+	public function location()
+	{
+		$this->load->view('header_guest');
+		$this->load->view('location');
+		$this->load->view('footer_gcontact');
+	}
+
+	public function locationayala()
+	{
+		$this->load->view('header_guest');
+		$this->load->view('locationayala');
+		$this->load->view('footer_gcontact');
+	}
+
+	public function locationseaside()
+	{
+		$this->load->view('header_guest');
+		$this->load->view('locationseaside');
+		$this->load->view('footer_gcontact');
+	}
+
+	public function locationgalleria()
+	{
+		$this->load->view('header_guest');
+		$this->load->view('locationgalleria');
+		$this->load->view('footer_gcontact');
+	}
+
+
 
 	public function logout()
 	{

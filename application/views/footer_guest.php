@@ -35,9 +35,6 @@
 						<a href="<?php echo base_url('/welcome/genres"');?>">Movies</a>
 					</li>
 					<li>
-						<a href="<?php echo base_url('/welcome/faq"');?>">FAQ</a>
-					</li>
-					<li>
 						<a href="<?php echo base_url('/welcome/horror"');?>">Action</a>
 					</li>
 					<li>

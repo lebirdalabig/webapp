@@ -30,8 +30,6 @@ class User extends CI_Controller {
             $config['total_rows'] = $this->movie_model->getMovieCount();
             $config['per_page'] = 10;
 
-            echo $config['total_rows'];
-
             $this->pagination->initialize($config);
 
             $data['res'] = $this->movie_model->getMovies($config['per_page'],$off);
@@ -40,17 +38,35 @@ class User extends CI_Controller {
             $this->load->view('footer');
         }
 
+        public function register()
+        {
+            $this->load->model('userModel');
+            $form_data = array(
+                'user_id' => "",
+                'username' => $this->input->post("username"),
+                'password' => $this->input->post("Password"),
+                'user_fname' => $this->input->post("fName"),
+                'user_lname' => $this->input->post("lName"),
+                'user_bod' => "",
+                'user_gender' => "",
+                'user_civil' => "",
+                'user_address' => "",
+                'user_province' => "",
+                'user_city' => "",
+                'user_mobile' => $this->input->post("Phone"),
+                'user_email' => $this->input->post("email"),
+                'user_type' => "Customer"
+            );
+            //print_r($form_data);
+            $res = $this->userModel->register($form_data);
+            //echo $res;
+                redirect(base_url('welcome/index'),'refresh');
+        }
+
         public function logout()
         {
             $this->session->sess_destroy();
             redirect('welcome/index');
-        }
-
-        public function faq()
-        {
-            $this->load->view('header');
-            $this->load->view('faq');
-            $this->load->view('footer');
         }
 
         public function genres()
@@ -81,10 +97,10 @@ class User extends CI_Controller {
             $this->load->view('footer');
         }
 
-        public function icons()
+        public function snacks()
         {
             $this->load->view('header');
-            $this->load->view('icons');
+            $this->load->view('snacks');
             $this->load->view('footer');
         }
 }

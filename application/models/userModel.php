@@ -30,9 +30,9 @@
 			return $res;
 		}
 
-		public function register($data)
+		public function register($form_data)
 		{
-			
+			return $this->db->insert('user', $form_data);
 		}
 	}
 

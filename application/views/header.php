@@ -64,7 +64,7 @@
 			</div>
 			<div class="w3l_sign_in_register">
 				<ul>
-					<li><i class="" aria-hidden="true"><a href="user/usersettings"><span class="glyphicon glyphicon-user"></span></a></i>Welcome 
+					<li><i class="" aria-hidden="true"><a href="usersettings"><span class="glyphicon glyphicon-user"></span></a></i>Welcome 
 					<?php
 						echo $_SESSION['username'];
 					?></li>
@@ -91,11 +91,11 @@
 				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav>
 						<ul class="nav navbar-nav">
-							<li class="active"><a href="<?php echo base_url ('index.php');?>">Home</a></li>
+							<li><a href="<?php echo base_url ('user/index');?>">Home</a></li>
 							
-							<li><a href="schedule.php">Snacks</a></li>
-							<li><a href="<?php echo site_url('user/movies');?>">Movies</a></li>
-							<li><a href="schedule.php">Location</a></li>
+							<li><a href="<?php echo base_url('/user/snacks');?>">Snacks</a></li>
+							<li><a href="<?php echo site_url('/user/movies');?>">Movies</a></li>
+							<li><a href="<?php echo base_url('/user/location');?>">Location</a></li>
 						</ul>
 					</nav>
 				</div>
