@@ -97,17 +97,20 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('header_guest');
 		$this->load->view('contact');
+
+		$name = $this->input->post('name');
+		$email = $this->input->post('email');
+		$subject = $this->input->post('subject');
+		$message = $this->input->post('message');
+
 		$this->load->library('email');
+		$this->email->set_newline('\r\n');
 
-		$this->email->from('your@example.com', 'Your Name');
+		$this->email->from('$email', '$name');
 		$this->email->to('von.arimbay598@gmail.com');
-		$this->email->cc('von.arimbay598@gmail.com');
-		$this->email->bcc('von.arimbay598@gmail.com');
+		//$this->subject->('$subject');
+		$this->email->message('$message');
 
-		$this->email->subject('Email Test');
-		$this->email->message('Testing the email class.');
-
-		$this->email->send();
 		$this->load->view('footer_guest');
 	}
 

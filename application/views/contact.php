@@ -83,11 +83,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				</div>
 				<div class="clearfix"></div>
 				<form action="#" method="post">
-					<input type="text" name="your name" placeholder="FIRST NAME" required="">
-					<input type="text" name="your name" placeholder="LAST NAME" required="">
-					<input type="text" name="your email" placeholder="EMAIL" required="">
+					<input type="text" name="name" placeholder="Name" required="">
+					<input type="text" name="email" placeholder="EMAIL" required="">
 					<input type="text" name="subject" placeholder="SUBJECT" required="">
-					<textarea  name="your message" placeholder="YOUR MESSAGE" required=""></textarea>
+					<textarea  name="message" placeholder="YOUR MESSAGE" required=""></textarea>
 					<input type="submit" value="SEND MESSAGE">
 				</form>
 			</div>
