@@ -30,37 +30,14 @@ class User extends CI_Controller {
             $config['total_rows'] = $this->movie_model->getMovieCount();
             $config['per_page'] = 10;
 
+            echo $config['total_rows'];
+
             $this->pagination->initialize($config);
 
             $data['res'] = $this->movie_model->getMovies($config['per_page'],$off);
             $this->load->view('header');
             $this->load->view('displayMovies',$data);
             $this->load->view('footer');
-        }
-
-        public function register()
-        {
-            $this->load->model('userModel');
-            $form_data = array(
-                'user_id' => "",
-                'username' => $this->input->post("username"),
-                'password' => $this->input->post("Password"),
-                'user_fname' => $this->input->post("fName"),
-                'user_lname' => $this->input->post("lName"),
-                'user_bod' => "",
-                'user_gender' => "",
-                'user_civil' => "",
-                'user_address' => "",
-                'user_province' => "",
-                'user_city' => "",
-                'user_mobile' => $this->input->post("Phone"),
-                'user_email' => $this->input->post("email"),
-                'user_type' => "Customer"
-            );
-            //print_r($form_data);
-            $res = $this->userModel->register($form_data);
-            //echo $res;
-                redirect(base_url('welcome/index'),'refresh');
         }
 
         public function logout()
@@ -101,6 +78,45 @@ class User extends CI_Controller {
         {
             $this->load->view('header');
             $this->load->view('snacks');
+            $this->load->view('footer');
+        }
+
+        public function location()
+        {
+            $this->load->view('header');
+            $this->load->view('location');
+            $this->load->view('footer');
+        }
+
+        public function locationayala()
+        {
+            $this->load->view('header');
+            $this->load->view('locationayala');
+            $this->load->view('footer');
+        }
+
+        public function locationseaside()
+        {
+            $this->load->view('header');
+            $this->load->view('locationseaside');
+            $this->load->view('footer');
+        }
+
+        public function locationgalleria()
+        {
+            $this->load->view('header');
+            $this->load->view('locationgalleria');
+            $this->load->view('footer');
+        }
+        
+        public function moviePage($id)
+        {
+            $this->load->model('movieModel');
+            $this->movieModel->specific_movie($id);
+            $data['res'] = $this->movieModel->specific_movie($id);
+                
+            $this->load->view('header');
+            $this->load->view('moviePage', $data);
             $this->load->view('footer');
         }
 }

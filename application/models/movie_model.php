@@ -36,7 +36,7 @@
                 }
 
                 public function getMovieCount(){
-                        return $this->db->count_all('movie');
+                        // return $this->db->count_all('movie');
                 }
 
         }

@@ -149,12 +149,15 @@ class Welcome extends CI_Controller {
 		$this->load->view('footer_gcontact');
 	}
 
-
-
-	public function logout()
-	{
-		$this->session->sess_destroy();
-		redirect('welcome/index');
-	}
+    public function moviePage($id)
+    {
+    	$this->load->view('header_guest');
+        $this->load->model('movieModel');
+        $this->movieModel->specific_movie($id);
+        $data['res'] = $this->movieModel->specific_movie($id);
+            
+        $this->load->view('moviePage', $data);
+        $this->load->view('footer_guest');
+    }
 }
 	

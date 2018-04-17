@@ -32,6 +32,13 @@
 			//print_r ($form_data);
 			return $this->db->update('movie', $form_data);
 		}
+		
+		public function specific_movie($id)
+		{
+			$query = $this->db->get_where('movie', array('movie_id' => $id));
+			return $query->result();
+			
+		}
 	}
 
 ?>

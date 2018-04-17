@@ -4,7 +4,7 @@
 <link href="<?php echo base_url('resources/css/bootstrap.css');?>" rel="stylesheet" type="text/css" media="all" />
 <link href="<?php echo base_url('resources/css/style.css');?>" rel="stylesheet" type="text/css" media="all" />
 <link rel="stylesheet" href="<?php echo base_url('resources/css/contactstyle.css');?>" type="text/css" media="all" />
-<link rel="stylesheet" href="<?php echo base_url('resources/css/faqstyle.css');?>" type="text/css');?>" media="all" />
+<link rel="stylesheet" href="<?php echo base_url('resources/css/faqstyle.css" type="text/css');?>" media="all" />
 <link href="<?php echo base_url('resources/css/single.css');?>" rel='stylesheet' type='text/css' />
 <link href="<?php echo base_url('resources/css/medile.css');?>" rel='stylesheet' type='text/css' />
 <!-- banner-slider -->
@@ -14,10 +14,10 @@
 <link href="<?php echo base_url('resources/css/popuo-box.css');?>" rel="stylesheet" type="text/css" media="all" />
 <!-- //pop-up -->
 <!-- font-awesome icons -->
-<link rel="stylesheet" href="<?php echo base_url('resources/css/font-awesome.min.css');?>" />
+<link rel="stylesheet" href="<?php echo base_url('resources/css/font-awesome.min.css"');?> />
 <!-- //font-awesome icons -->
 <!-- js -->
-<script type="text/javascript" src="<?php echo base_url('resources/js/jquery-2.1.4.min.js');?>"></script>
+<script type="text/javascript" src="<?php echo base_url('resources/js/jquery-2.1.4.min.js');?>""></script>
 <!-- //js -->
 <!-- banner-bottom-plugin -->
 <link href="<?php echo base_url('resources/css/owl.carousel.css');?>" rel="stylesheet" type="text/css" media="all">
@@ -33,6 +33,7 @@
 		  itemsDesktopSmall : [414,3]
 	 
 		});
+	 
 	}); 
 </script> 
 <!-- start-smoth-scrolling -->
@@ -84,13 +85,13 @@
 					?>
 						<div class="item">
 							<div class="w3l-movie-gride-agile w3l-movie-gride-agile1">
-								<a href="single.php" class="hvr-shutter-out-horizontal">
+								<a href="<?php echo base_url("welcome/moviePage/{$row->movie_id}");?>" class="hvr-shutter-out-horizontal">
 									<img src="<?php echo base_url("resources/{$row->movie_poster}");?>" title="album-name" class="img-responsive" alt=" " />
 									<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 								</a>
 								<div class="mid-1 agileits_w3layouts_mid_1_home">
 									<div class="w3l-movie-text">
-										<h6><a href="single.php">
+										<h6><a href="<?php echo base_url("welcome/moviePage/{$row->movie_id}");?>">
 											<?php 
 												echo ("{$row->movie_title}")
 											?>
@@ -127,40 +128,3 @@
 		</div>
 	</div>
 <!-- //banner-bottom -->
-	
-<!-- Bootstrap Core JavaScript -->
-<script src="<?php echo base_url('resources/js/bootstrap.min.js');?>""></script>
-<script>
-$(document).ready(function(){
-    $(".dropdown").hover(            
-        function() {
-            $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
-            $(this).toggleClass('open');        
-        },
-        function() {
-            $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
-            $(this).toggleClass('open');       
-        }
-    );
-});
-</script>
-<!-- //Bootstrap Core JavaScript -->
-<!-- here stars scrolling icon -->
-	<script type="text/javascript">
-		$(document).ready(function() {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
-								
-			$().UItoTop({ easingType: 'easeOutQuart' });
-								
-			});
-	</script>
-<!-- //here ends scrolling icon -->
-</body>
-</html>

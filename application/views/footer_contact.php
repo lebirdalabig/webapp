@@ -1,7 +1,7 @@
 </div>
-		<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+		<div>
 			<nav>
-				<ul class="nav navbar-nav">
+				<ul>
 				<li><a href="<?php echo base_url ('/user/location');?>">SM CEBU</a></li>
 					
 				<li><a href="<?php echo base_url('/user/locationayala');?>">AYALA</a></li>
