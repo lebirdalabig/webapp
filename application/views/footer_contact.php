@@ -2,7 +2,7 @@
 		<div>
 			<nav>
 				<ul>
-				<li><a href="<?php echo base_url ('/user/location');?>">SM CEBU</a></li>
+				<li style="background-color: red;"><a href="<?php echo base_url ('/user/location');?>">SM CEBU</a></li>
 					
 				<li><a href="<?php echo base_url('/user/locationayala');?>">AYALA</a></li>
 				<li><a href="<?php echo site_url('/user/locationgalleria');?>">ROBINSONS GALLERIA</a></li>
