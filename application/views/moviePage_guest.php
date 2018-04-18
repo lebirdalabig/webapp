@@ -9,7 +9,7 @@
 <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
 					<nav>
 					 <div class='container'>
-	                  <form method = 'POST' class='form-horizontal' action='<?php echo site_url('user/transaction')?>'>
+	                  <form method = 'POST' class='form-horizontal' action=''>
 	                  	<div class='form-group'>
 	                    <div class='col-sm-3'>
 	                      	<select style="border-radius: 10px" name="title" class='form-control'>
@@ -24,7 +24,7 @@
 	                    
 	                    <div class='form-group'> 
 	                    <div class='col-sm-offset-2 col-sm-10'>
-	                      <button type='submit' class='btn btn-default'>Checkout</button>
+	                      <button type='submit' class='btn btn-default' onclick="tryAlerting()">Checkout</button>
 	                    </div>
 	                    </div>
 	                  </form>
@@ -35,4 +35,7 @@
 		</div>
 	</div>
 <script>
+function tryAlerting() {
+    alert("Please Login to continue!");
+}
 </script>

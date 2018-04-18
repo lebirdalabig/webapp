@@ -92,7 +92,6 @@
 					<nav>
 						<ul class="nav navbar-nav">
 							<li><a href="<?php echo base_url ('user/index');?>">Home</a></li>
-							
 							<li><a href="<?php echo base_url('/user/snacks');?>">Snacks</a></li>
 							<li><a href="<?php echo site_url('/user/movies');?>">Movies</a></li>
 							<li><a href="<?php echo base_url('/user/location');?>">Location</a></li>

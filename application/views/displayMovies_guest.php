@@ -17,7 +17,7 @@
 				?>
 					
 								<div class="col-md-2 w3l-movie-gride-agile">
-									<a href="<?php echo base_url("user/moviePage/{$row->movie_id}");?>" class="hvr-shutter-out-horizontal">
+									<a href="<?php echo base_url("welcome/moviePage/{$row->movie_id}");?>" class="hvr-shutter-out-horizontal">
 									<img src="<?php echo base_url("resources/{$row->movie_poster}");?>" title="album-name" class="img-responsive" alt=" " />
 										<div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
 									</a>

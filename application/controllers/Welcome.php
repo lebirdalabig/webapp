@@ -68,7 +68,7 @@ class Welcome extends CI_Controller {
             $this->pagination->initialize($config);
 
             $data['res'] = $this->movie_model->getMovies($config['per_page'],$off);
-            $this->load->view('displayMovies',$data);
+            $this->load->view('displayMovies_guest',$data);
             $this->load->view('footer_guest');
     }
 
@@ -156,7 +156,7 @@ class Welcome extends CI_Controller {
         $this->movieModel->specific_movie($id);
         $data['res'] = $this->movieModel->specific_movie($id);
             
-        $this->load->view('moviePage', $data);
+        $this->load->view('moviePage_guest', $data);
         $this->load->view('footer_guest');
     }
 }

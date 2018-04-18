@@ -39,6 +39,11 @@
 			return $query->result();
 			
 		}
+
+		public function transaction($form_data)
+		{
+			return $this->db->insert('transaction', $form_data);
+		}
 	}
 
 ?>
