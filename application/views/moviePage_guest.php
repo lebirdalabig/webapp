@@ -21,7 +21,17 @@
 							</select>
 	                    </div>
 	                    </div>
-	                    
+	                    <div class='form-group'>
+	                    <div class='col-sm-3'>
+	                      	<select style="border-radius: 10px" name="screening" class='form-control'>
+								<option value="" selected disabled>SELECT BRANCH</option>
+								<option value="1">Valve</option>
+								<option value="saab">Steam</option>
+								<option value="vw">Origin</option>
+								<option value="audi">EA</option>
+							</select>
+	                    </div>
+	                    </div>
 	                    <div class='form-group'> 
 	                    <div class='col-sm-offset-2 col-sm-10'>
 	                      <button type='submit' class='btn btn-default' onclick="tryAlerting()">Checkout</button>

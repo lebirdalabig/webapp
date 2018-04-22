@@ -12,7 +12,7 @@
 	                  <form method = 'POST' class='form-horizontal' action='<?php echo site_url('user/transaction')?>'>
 	                  	<div class='form-group'>
 	                    <div class='col-sm-3'>
-	                      	<select style="border-radius: 10px" name="title" class='form-control'>
+	                      	<select style="border-radius: 10px" name="title" class='form-control screening-ctrls'>
 								<option value="" selected disabled>SELECT BRANCH</option>
 								<option value="volvo">Valve</option>
 								<option value="saab">Steam</option>
@@ -21,7 +21,17 @@
 							</select>
 	                    </div>
 	                    </div>
-	                    
+	                    <div class='form-group'>
+	                    <div class='col-sm-3'>
+	                      	<select style="border-radius: 10px" name="title" class='form-control'>
+								<option value="" selected disabled>SELECT SCREENING</option>
+								<option value="1">Valve</option>
+								<option value="1">Steam</option>
+								<option value="1">Origin</option>
+								<option value="1">EA</option>
+							</select>
+	                    </div>
+	                    </div>
 	                    <div class='form-group'> 
 	                    <div class='col-sm-offset-2 col-sm-10'>
 	                      <button type='submit' class='btn btn-default'>Checkout</button>
@@ -34,5 +44,8 @@
 			</nav>	
 		</div>
 	</div>
-<script>
-</script>
+	<!-- <script type="text/javascript">
+		$('.screening-ctrls').on('change', function(){
+			
+		})
+	</script> -->

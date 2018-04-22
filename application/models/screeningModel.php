@@ -32,6 +32,12 @@
 			print_r ($form_data);
 			return $this->db->update('screening', $form_data);
 		}
+
+		public function screening($id)
+		{
+			$query = $this->db->get_where('screening', array('screening_id' => $id));
+			return $query->result();
+		}
 	}
 
 ?>

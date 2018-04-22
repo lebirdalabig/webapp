@@ -68,7 +68,7 @@
 					<?php
 						echo $_SESSION['username'];
 					?></li>
-					<li><a href="logout" >Logout</a></li>
+					<li><a href= "<?php echo site_url ('user/logout')?>" >Logout</a></li>
 				</ul>
 			</div>
 			<div class="clearfix"> </div>

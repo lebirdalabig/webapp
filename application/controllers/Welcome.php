@@ -159,5 +159,6 @@ class Welcome extends CI_Controller {
         $this->load->view('moviePage_guest', $data);
         $this->load->view('footer_guest');
     }
+    
 }
 	

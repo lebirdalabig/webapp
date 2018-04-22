@@ -37,13 +37,13 @@
 		{
 			$query = $this->db->get_where('movie', array('movie_id' => $id));
 			return $query->result();
-			
 		}
 
 		public function transaction($form_data)
 		{
 			return $this->db->insert('transaction', $form_data);
 		}
-	}
+
+}
 
 ?>

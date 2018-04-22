@@ -42,15 +42,17 @@ class User extends CI_Controller {
 
         public function transaction()
         {
+            $this->load->model('screeningModel');
+            $this->movieModel->specific_movie($id);
             $this->load->model('movieModel');
             $form_data = array(
                 'transaction_id' => "",
                 'trans_ref' => $this->input->post("title"),
                 'trans_date' => "",
                 'trans_amount' => "",
-                'trans_type' => "",
-                'screening_id' => "",
-                'cust_id' => ""
+                'trans_type' => "Credit",
+                'screening_id' => $data['res'] = $this->screeningModel->screening($id),
+                'cust_id' => $_SESSION["user_id"]
         );
             print_r($form_data);
             $res = $this->movieModel->transaction($form_data);
@@ -128,10 +130,11 @@ class User extends CI_Controller {
         public function moviePage($id)
         {
             $this->load->view('header');
+
             $this->load->model('movieModel');
             $this->movieModel->specific_movie($id);
             $data['res'] = $this->movieModel->specific_movie($id);
-                
+
             $this->load->view('moviePage', $data);
             $this->load->view('footer');
         }
