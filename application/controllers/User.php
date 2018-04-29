@@ -138,4 +138,23 @@ class User extends CI_Controller {
             $this->load->view('moviePage', $data);
             $this->load->view('footer');
         }
+		
+		public function updateItem($id = 0){
+			if($this->isLoggedIn()){
+				$msg['success'] = false;
+				$msg['type'] = 'update';
+				
+				$this->load->model('itemModel');
+				$id = $this->input->post('item_id');
+				
+				$form_data = array();
+				$result = $this->itemModel->updateItem($id,$form_data);
+				
+				if($result){
+					$msg['success'] = true;
+				}
+				echo json_encode($msg);
+			}
+			
+		}
 }

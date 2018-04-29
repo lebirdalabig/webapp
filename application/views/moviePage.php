@@ -12,7 +12,7 @@
 	                  <form method = 'POST' class='form-horizontal' action='<?php echo site_url('user/transaction')?>'>
 	                  	<div class='form-group'>
 	                    <div class='col-sm-3'>
-	                      	<select style="border-radius: 10px" name="title" class='form-control screening-ctrls'>
+	                      	<select id="branch" style="border-radius: 10px" name="title" class='form-control screening-ctrls'>
 								<option value="" selected disabled>SELECT BRANCH</option>
 								<option value="volvo">Valve</option>
 								<option value="saab">Steam</option>
@@ -44,8 +44,23 @@
 			</nav>	
 		</div>
 	</div>
-	<!-- <script type="text/javascript">
-		$('.screening-ctrls').on('change', function(){
+	<script type="text/javascript">
+		$('#branch').change(function(){
+			var url;
+			var data;
 			
-		})
-	</script> -->
+			$.ajax({
+				method: 'post',
+				url: url,
+				data: data,
+				async: false,
+				dataType: 'json',
+				success: function(response){
+					
+				},
+				error: function(){
+					alert('D:');
+				}
+			})
+		});
+	</script>
